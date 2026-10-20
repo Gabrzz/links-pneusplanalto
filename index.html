@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pneus Planalto | Fale com a unidade mais perto de você</title>
+  <meta name="description" content="Pneus, alinhamento, balanceamento e auto center em Uberlândia, Araguari e Uberaba. Fale no WhatsApp com a unidade Pneus Planalto mais perto de você.">
+  <meta name="theme-color" content="#0E0E0E">
+  <link rel="canonical" href="https://links.pneusplanalto.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pneus Planalto">
+  <meta property="og:title" content="Pneus Planalto | Fale com a unidade mais perto de você">
+  <meta property="og:description" content="Pneus, alinhamento, balanceamento e auto center em Uberlândia, Araguari e Uberaba.">
+  <meta property="og:url" content="https://links.pneusplanalto.com.br/">
+  <meta property="og:image" content="https://links.pneusplanalto.com.br/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Pneus Planalto">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <main class="page" id="conteudo">
+    <header class="hero">
+      <img class="hero__logo" src="assets/logo.svg" alt="Pneus Planalto" width="2160" height="529">
+      <h1 class="hero__nome" id="perfil-nome">Pneus Planalto</h1>
+      <p class="hero__desc" id="perfil-desc"></p>
+      <nav class="social" id="redes" aria-label="Redes sociais"></nav>
+    </header>
+
+    <section class="destaque" id="destaque" hidden aria-labelledby="destaque-titulo"></section>
+
+    <button type="button" class="btn btn--primary btn--hero" id="btn-whats" hidden aria-haspopup="dialog" aria-controls="folha">
+      <span class="ico" data-ico="whatsapp"></span>
+      <span>Fale no WhatsApp</span>
+    </button>
+
+    <section class="unidades" id="unidades" aria-labelledby="unidades-titulo" hidden>
+      <h2 class="secao-titulo" id="unidades-titulo">Nossas unidades</h2>
+      <div id="lista-cidades"></div>
+    </section>
+
+    <section class="extras" id="extras" aria-label="Links" hidden></section>
+
+    <!-- Mostrado se o links.json não carregar (ou sem JavaScript) -->
+    <div class="erro" id="erro" hidden role="alert">
+      <p><strong>Ops! Não conseguimos carregar a página agora.</strong></p>
+      <p>Fale com a nossa matriz pelo WhatsApp:</p>
+      <a class="btn btn--primary" href="https://wa.me/553432360010?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20falar%20com%20a%20Pneus%20Planalto.">WhatsApp da Matriz</a>
+    </div>
+    <noscript>
+      <div class="erro">
+        <p><strong>Fale com a nossa matriz pelo WhatsApp:</strong></p>
+        <a class="btn btn--primary" href="https://wa.me/553432360010">WhatsApp da Matriz</a>
+      </div>
+    </noscript>
+
+    <footer class="rodape">
+      <p>© <span id="ano">2026</span> Pneus Planalto</p>
+    </footer>
+  </main>
+
+  <dialog class="folha" id="folha" aria-labelledby="folha-titulo">
+    <div class="folha__topo">
+      <h2 id="folha-titulo">Escolha a unidade</h2>
+      <button type="button" class="folha__fechar" id="folha-fechar" aria-label="Fechar">
+        <span class="ico" data-ico="close"></span>
+      </button>
+    </div>
+    <div class="folha__lista" id="folha-lista"></div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
