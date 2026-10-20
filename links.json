@@ -1,0 +1,104 @@
+{
+  "perfil": {
+    "nome": "Pneus Planalto",
+    "descricao": "Pneus, alinhamento, balanceamento e auto center • Uberlândia, Araguari e Uberaba",
+    "logo": "assets/logo.svg"
+  },
+
+  "redes": [
+    { "tipo": "instagram", "rotulo": "Instagram", "url": "https://www.instagram.com/pneusplanalto/" },
+    { "tipo": "site", "rotulo": "Site", "url": "https://pneusplanalto.com.br/" },
+    { "tipo": "facebook", "rotulo": "Facebook", "url": "https://www.facebook.com/pneusplanalto" },
+    { "tipo": "youtube", "rotulo": "YouTube", "url": "https://www.youtube.com/channel/UC-2RL3aMeeoYsueIo8RDpFA" }
+  ],
+
+  "destaque": {
+    "ativo": false,
+    "titulo": "Promoção do mês",
+    "texto": "Compre 4 pneus e ganhe o alinhamento. Consulte condições na loja.",
+    "botao_texto": "Quero aproveitar",
+    "botao_url": "https://wa.me/553432360010?text=Ol%C3%A1!%20Vi%20a%20promo%C3%A7%C3%A3o%20no%20Instagram."
+  },
+
+  "whatsapp": {
+    "mensagem_padrao": "Olá! Vim pelo Instagram e gostaria de falar com a unidade {nome}.",
+    "matriz": "553432360010"
+  },
+
+  "cidades_ordem": ["Uberlândia", "Araguari", "Uberaba"],
+
+  "lojas": [
+    {
+      "id": "av-brasil",
+      "nome": "Unidade Av. Brasil (Matriz)",
+      "cidade": "Uberlândia",
+      "endereco": "Av. Brasil, 1470, N. Sra. Aparecida",
+      "whatsapp": "553432360010",
+      "mapa": "",
+      "avaliar": "PREENCHER",
+      "horarios": { "seg_sex": "08:00-18:00", "sabado": "08:00-12:00", "domingo": "fechado" }
+    },
+    {
+      "id": "joao-naves",
+      "nome": "Unidade João Naves",
+      "cidade": "Uberlândia",
+      "endereco": "Av. João Naves de Ávila, 5000, Pampulha",
+      "whatsapp": "553432575000",
+      "mapa": "",
+      "avaliar": "PREENCHER",
+      "horarios": { "seg_sex": "08:00-18:00", "sabado": "08:00-12:00", "domingo": "fechado" }
+    },
+    {
+      "id": "afonso-pena",
+      "nome": "Unidade Afonso Pena",
+      "cidade": "Uberlândia",
+      "endereco": "Av. Afonso Pena, 3237, Brasil",
+      "whatsapp": "553432363747",
+      "mapa": "",
+      "avaliar": "PREENCHER",
+      "horarios": { "seg_sex": "08:00-18:00", "sabado": "08:00-12:00", "domingo": "fechado" }
+    },
+    {
+      "id": "floriano",
+      "nome": "Unidade Floriano Peixoto",
+      "cidade": "Uberlândia",
+      "endereco": "Av. Floriano Peixoto, 2980, N. Sra. Aparecida",
+      "whatsapp": "553432226888",
+      "mapa": "",
+      "avaliar": "PREENCHER",
+      "horarios": { "seg_sex": "08:00-18:00", "sabado": "08:00-12:00", "domingo": "fechado" }
+    },
+    {
+      "id": "uberaba",
+      "nome": "Unidade Uberaba – Av. Fernando Costa",
+      "cidade": "Uberaba",
+      "endereco": "Av. Fernando Costa, 821, São Benedito",
+      "whatsapp": "553433380010",
+      "mapa": "",
+      "avaliar": "PREENCHER",
+      "horarios": { "seg_sex": "08:00-18:00", "sabado": "08:00-12:00", "domingo": "fechado" }
+    },
+    {
+      "id": "araguari",
+      "nome": "Unidade Araguari",
+      "cidade": "Araguari",
+      "endereco": "R. Marciano Santos, 653, Centro",
+      "whatsapp": "553435127676",
+      "mapa": "",
+      "avaliar": "PREENCHER",
+      "horarios": { "seg_sex": "08:00-18:00", "sabado": "08:00-12:00", "domingo": "fechado" }
+    }
+  ],
+
+  "links_extras": [
+    { "rotulo": "Visite nosso site", "url": "https://pneusplanalto.com.br/", "icone": "site" },
+    { "rotulo": "Siga no Instagram", "url": "https://www.instagram.com/pneusplanalto/", "icone": "instagram" },
+    { "rotulo": "Curta no Facebook", "url": "https://www.facebook.com/pneusplanalto", "icone": "facebook" },
+    { "rotulo": "Vídeos no YouTube", "url": "https://www.youtube.com/channel/UC-2RL3aMeeoYsueIo8RDpFA", "icone": "youtube" }
+  ],
+
+  "rastreamento": {
+    "ativo": false,
+    "webhook": ""
+  }
+}
