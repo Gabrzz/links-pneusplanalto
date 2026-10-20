@@ -230,11 +230,19 @@
     var st = statusLoja(l.horarios);
     var hora = resumoHorario(l.horarios);
 
+    // "Unidade Av. Brasil (Matriz)" -> nome "Av. Brasil" + etiqueta "Matriz"
+    var etiqueta = (l.nome.match(/\(([^)]+)\)/) || [])[1] || "";
+    var titulo = nomeCurto(l.nome).replace(/\s*\([^)]*\)\s*/, " ").trim();
+
     var html =
       '<div class="loja__topo">' +
-        '<h4 class="loja__nome" id="nome-' + esc(l.id) + '">' + esc(l.nome) + "</h4>" +
+        '<span class="loja__cidade">' + ico("mapa") + esc(l.cidade) + "</span>" +
         '<span class="loja__selo">' + seloHTML(st) + "</span>" +
       "</div>" +
+      '<h4 class="loja__nome" id="nome-' + esc(l.id) + '">' +
+        '<span class="loja__rotulo">Unidade</span>' + esc(titulo) +
+        (etiqueta ? ' <span class="loja__etiqueta">' + esc(etiqueta) + "</span>" : "") +
+      "</h4>" +
       '<p class="loja__end">' + ico("mapa") + "<span>" + esc(l.endereco) + "</span></p>" +
       (hora ? '<p class="loja__hora">' + esc(hora) + "</p>" : "") +
       '<div class="loja__acoes"></div>';

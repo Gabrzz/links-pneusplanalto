@@ -185,21 +185,27 @@ img, svg { display: block; max-width: 100%; }
   transform: skewX(-15deg);
 }
 
-.cidade { margin-top: 14px; }
+.cidade { margin-top: 22px; }
 .cidade__nome {
-  font-size: .78rem;
-  font-weight: 700;
-  letter-spacing: .12em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fonte-titulo);
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: .08em;
   text-transform: uppercase;
-  color: var(--cinza);
-  margin: 0 0 8px 2px;
+  color: var(--amarelo);
+  margin: 0 0 10px 2px;
 }
+.cidade__nome::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(254, 221, 0, .5), transparent); }
 .cidade__lista { display: flex; flex-direction: column; gap: 12px; }
 
 .loja {
   background: var(--grafite);
   border: 1px solid var(--borda);
   border-radius: var(--raio);
+  border-left: 4px solid var(--amarelo);
   padding: 16px;
   transition: border-color .2s ease;
 }
@@ -207,9 +213,52 @@ img, svg { display: block; max-width: 100%; }
 .loja.is-alvo { animation: piscar 1.4s ease 1; }
 @keyframes piscar { 0%, 100% { border-color: var(--borda); } 30% { border-color: var(--amarelo); } }
 
-.loja__topo { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
-.loja__nome { font-size: 1.02rem; font-weight: 700; margin: 0; line-height: 1.25; }
-.loja__end { margin: 6px 0 0; color: var(--cinza); font-size: .88rem; display: flex; gap: 6px; }
+.loja__topo { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.loja__cidade {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 9px 4px 7px;
+  border-radius: 6px;
+  background: var(--amarelo);
+  color: var(--preto);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.loja__cidade .ico { width: 13px; height: 13px; }
+.loja__nome {
+  font-family: var(--fonte-titulo);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.12;
+  margin: 12px 0 0;
+  color: var(--branco);
+}
+.loja__rotulo {
+  display: block;
+  font-family: var(--fonte-texto);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--cinza);
+  margin-bottom: 3px;
+}
+.loja__etiqueta {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 7px;
+  border: 1px solid var(--amarelo);
+  border-radius: 6px;
+  font-family: var(--fonte-texto);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--amarelo);
+  position: relative; top: -2px;
+}
+.loja__end { margin: 8px 0 0; color: var(--cinza); font-size: .88rem; display: flex; gap: 6px; }
 .loja__end .ico { width: 16px; height: 16px; margin-top: 2px; }
 .loja__hora { margin: 4px 0 0; color: var(--cinza); font-size: .82rem; }
 
