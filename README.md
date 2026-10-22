@@ -65,7 +65,7 @@ Ordem em que as cidades aparecem na seção "Nossas unidades".
 | `whatsapp` | Número com DDI + DDD + número, **só dígitos** (ex.: `553432360010`). Se ficar vazio ou `"PREENCHER"`, aparece "Em breve" no lugar do botão. |
 | `mensagem` | *(opcional)* Mensagem própria desta loja, no lugar da `mensagem_padrao`. |
 | `mapa` | *(opcional)* Link do Google Maps. Se ficar vazio, o link é gerado pelo endereço. |
-| `avaliar` | Link "Avaliar no Google" (`https://search.google.com/local/writereview?placeid=...`). Enquanto estiver `"PREENCHER"`, o botão **fica escondido**. |
+| `avaliar` | Link "Avaliar no Google" (ex.: `https://g.page/r/.../review`). Enquanto estiver `"PREENCHER"`, o botão **fica escondido**. |
 | `horarios` | Horário de funcionamento, usado no selo **Aberto agora / Fechado** (fuso de Brasília). Campos: `seg_sex`, `sabado`, `domingo`. Formato `"08:00-18:00"`, `"fechado"` ou duas faixas separadas por vírgula: `"08:00-12:00, 13:30-18:00"`. Também aceita dias separados (`seg`, `ter`, `qua`, `qui`, `sex`), que têm prioridade sobre `seg_sex`. |
 
 ### `links_extras`: botões no fim da página
@@ -119,12 +119,7 @@ Se for uma cidade nova, acrescente o nome dela em `cidades_ordem`.
 
 | Loja | Campo | Situação |
 |---|---|---|
-| Av. Brasil (Matriz) | `avaliar` | **PREENCHER**: link de avaliação do Google |
-| João Naves | `avaliar` | **PREENCHER** |
-| Afonso Pena | `avaliar` | **PREENCHER** |
-| Floriano Peixoto | `avaliar` | **PREENCHER** |
-| Uberaba (Av. Fernando Costa) | `avaliar` | **PREENCHER** |
-| Araguari | `avaliar` | **PREENCHER** |
+| Floriano Peixoto | `avaliar` | **PREENCHER**: link de avaliação do Google (as outras 5 lojas já estão preenchidas) |
 | **Todas as lojas** | `horarios` | ⚠️ **Conferir.** Os valores atuais (seg a sex 08:00-18:00, sáb 08:00-12:00, dom fechado) são de **exemplo**. |
 | — | `rastreamento.webhook` | Preencher quando o webhook do n8n existir e trocar `ativo` para `true`. |
 
